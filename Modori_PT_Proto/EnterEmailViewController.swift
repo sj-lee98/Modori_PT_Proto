@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class EnterEmailViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
@@ -40,6 +41,15 @@ class EnterEmailViewController: UIViewController {
     
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
+        // Firebase 이메일/비밀번호 인증
+        let email = emailTextField.text ?? "" // 만일 빈 값일 경우 옵셔널 처리
+        let password = passwordTextField.text ?? ""
+        
+        // Firebase 인증 플랫폼에 전달
+        // 신규 사용자 생성
+        Auth.auth().createUser(withEmail: email, password: password) {[weak self] authResult, error in
+            
+        }
         
     }
 }
