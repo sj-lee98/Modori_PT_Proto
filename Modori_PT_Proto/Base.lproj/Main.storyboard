@@ -214,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="1197" y="15"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Menu Tab Controller-->
         <scene sceneID="E7p-sd-mqW">
             <objects>
-                <tabBarController id="lvw-wU-buv" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MenuTabController" id="lvw-wU-buv" customClass="MenuTabController" customModule="Modori_PT_Proto" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tye-MB-Y43">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -340,10 +340,10 @@
             </objects>
             <point key="canvasLocation" x="1948" y="2046"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="mKC-Fi-wpK">
             <objects>
-                <viewController id="N7Y-wq-0M1" customClass="MainViewController" customModule="Modori_PT_Proto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="N7Y-wq-0M1" customClass="SettingViewController" customModule="Modori_PT_Proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tGd-vB-4j6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

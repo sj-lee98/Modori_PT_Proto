@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class MainViewController: UIViewController {
+class SettingViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
     
@@ -24,6 +25,13 @@ class MainViewController: UIViewController {
         
         // 네비게이션 바 숨기기
         navigationController?.navigationBar.isHidden = true
+        
+        // Firebase 이메일 가져와서 출력 없으면 고객
+        let email = Auth.auth().currentUser?.email ?? "고객"
+        welcomeLabel.text = """
+        환영합니다.
+        \(email)님
+        """
         
     }
     

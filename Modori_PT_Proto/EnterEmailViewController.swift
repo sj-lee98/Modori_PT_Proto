@@ -47,20 +47,22 @@ class EnterEmailViewController: UIViewController {
         
         // Firebase 인증 플랫폼에 전달
         // 신규 사용자 생성
-        Auth.auth().createUser(withEmail: email, password: password) {[weak self] authResult, error in
+        Auth.auth().createUser(withEmail: email, password: password) {[weak self] authResult, error in guard let self = self else { return }
             
+            
+            self.showCameraViewController()
         }
+    }
+    private func showCameraViewController() {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let menuTabController = storyboard.instantiateViewController(identifier: "MenuTabController")
+        menuTabController.modalPresentationStyle = .fullScreen
+        navigationController?.show(menuTabController, sender: nil)
         
     }
 }
 
 extension EnterEmailViewController: UITextFieldDelegate {
-    
-    // 입력 다 하고 리턴 버튼 누르면 키보드 내리기
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        view.endEditing(true)
-        return false
-    }
     
     // 이메일/비밀번호 입력값이 있는지 확인해서 있으면 비활성화 되었던 다음 버튼 활성화
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -68,5 +70,12 @@ extension EnterEmailViewController: UITextFieldDelegate {
         let isPasswordEmpty = passwordTextField.text == ""
         
         nextButton.isEnabled = !isEmailEmpty && !isPasswordEmpty
+    }
+    
+    
+    // 입력 다 하고 리턴 버튼 누르면 키보드 내리기
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return false
     }
 }
