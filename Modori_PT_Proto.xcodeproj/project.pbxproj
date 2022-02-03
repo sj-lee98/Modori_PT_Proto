@@ -17,6 +17,9 @@
 		87C122CA279F90C000540BD6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C122C9279F90C000540BD6 /* LoginViewController.swift */; };
 		87C122CC279F9ED200540BD6 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */; };
 		87C122CE279FA56C00540BD6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C122CD279FA56C00540BD6 /* SettingViewController.swift */; };
+		87FCC91727ABA8FF00AA3109 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FCC91627ABA8FF00AA3109 /* ExerciseView.swift */; };
+		87FCC91927ABAAD700AA3109 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FCC91827ABAAD700AA3109 /* ExerciseViewController.swift */; };
+		87FCC91B27ABAE7300AA3109 /* SquatCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FCC91A27ABAE7300AA3109 /* SquatCamViewController.swift */; };
 		8A38A253DEB4C30634D4F0D2 /* Pods_Modori_PT_Proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89B9EF56CAB55F90B5C7703 /* Pods_Modori_PT_Proto.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		87C122C9279F90C000540BD6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
 		87C122CD279FA56C00540BD6 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		87FCC91627ABA8FF00AA3109 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		87FCC91827ABAAD700AA3109 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		87FCC91A27ABAE7300AA3109 /* SquatCamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatCamViewController.swift; sourceTree = "<group>"; };
 		F89B9EF56CAB55F90B5C7703 /* Pods_Modori_PT_Proto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modori_PT_Proto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +97,9 @@
 				87C122B5279F88D900540BD6 /* AppDelegate.swift */,
 				87C122B7279F88D900540BD6 /* SceneDelegate.swift */,
 				87C122BB279F88D900540BD6 /* Main.storyboard */,
+				87FCC91A27ABAE7300AA3109 /* SquatCamViewController.swift */,
+				87FCC91827ABAAD700AA3109 /* ExerciseViewController.swift */,
+				87FCC91627ABA8FF00AA3109 /* ExerciseView.swift */,
 				87407D3027A26C3A00FC4A4D /* MenuTabController.swift */,
 				87C122CD279FA56C00540BD6 /* SettingViewController.swift */,
 				87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */,
@@ -224,7 +233,10 @@
 				87C122CC279F9ED200540BD6 /* EnterEmailViewController.swift in Sources */,
 				87C122B8279F88D900540BD6 /* SceneDelegate.swift in Sources */,
 				87C122CE279FA56C00540BD6 /* SettingViewController.swift in Sources */,
+				87FCC91B27ABAE7300AA3109 /* SquatCamViewController.swift in Sources */,
 				87407D3127A26C3A00FC4A4D /* MenuTabController.swift in Sources */,
+				87FCC91927ABAAD700AA3109 /* ExerciseViewController.swift in Sources */,
+				87FCC91727ABA8FF00AA3109 /* ExerciseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

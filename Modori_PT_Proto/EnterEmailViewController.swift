@@ -50,10 +50,10 @@ class EnterEmailViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) {[weak self] authResult, error in guard let self = self else { return }
             
             
-            self.showCameraViewController()
+            self.MenuTabController()
         }
     }
-    private func showCameraViewController() {
+    private func MenuTabController() {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let menuTabController = storyboard.instantiateViewController(identifier: "MenuTabController")
         menuTabController.modalPresentationStyle = .fullScreen

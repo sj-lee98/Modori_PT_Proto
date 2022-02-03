@@ -224,9 +224,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="RzD-vM-gvP" kind="relationship" relationship="viewControllers" id="Tt6-ko-LZ2"/>
-                        <segue destination="ZqT-Dh-fyf" kind="relationship" relationship="viewControllers" id="CeU-r0-qXF"/>
-                        <segue destination="2Jv-b6-Qyu" kind="relationship" relationship="viewControllers" id="mgH-Wj-l7l"/>
+                        <segue destination="IKt-Ro-zKh" kind="relationship" relationship="viewControllers" id="fjI-oU-EZm"/>
+                        <segue destination="ZqT-Dh-fyf" kind="relationship" relationship="viewControllers" id="LlZ-5J-zDC"/>
+                        <segue destination="2Jv-b6-Qyu" kind="relationship" relationship="viewControllers" id="hnk-tB-swi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ENf-ZY-13M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -248,7 +248,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpV-VR-tfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="726"/>
+            <point key="canvasLocation" x="2829" y="-429"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="R64-lF-gIJ">
@@ -259,7 +259,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="운동인식 카메라 화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWV-7K-IxM">
-                                <rect key="frame" x="136" y="440" width="142" height="21"/>
+                                <rect key="frame" x="136" y="464.5" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67D-F8-d3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2681" y="726"/>
+            <point key="canvasLocation" x="2919" y="-429"/>
         </scene>
         <!--운동기록-->
         <scene sceneID="Vx6-Rz-kBg">
@@ -293,7 +293,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t37-o3-Fex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="1373"/>
+            <point key="canvasLocation" x="2012" y="1455"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fi8-iG-Lbx">
@@ -321,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3S-5k-kVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680" y="1373"/>
+            <point key="canvasLocation" x="2693" y="1454"/>
         </scene>
         <!--설정-->
         <scene sceneID="3Qu-3D-L2V">
@@ -338,7 +338,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRU-tG-kSN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948" y="2046"/>
+            <point key="canvasLocation" x="2012" y="2154"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="mKC-Fi-wpK">
@@ -381,7 +381,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPJ-8p-us9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680" y="2046"/>
+            <point key="canvasLocation" x="2693" y="2154"/>
+        </scene>
+        <!--운동-->
+        <scene sceneID="Y3Q-Km-u71">
+            <objects>
+                <navigationController id="IKt-Ro-zKh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="운동" image="flame" catalog="system" selectedImage="flame.fill" id="ejh-Qu-fu0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gnd-g0-ep1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tDd-WR-oS3" kind="relationship" relationship="rootViewController" id="dub-an-d0b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPN-h1-Ng3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2013" y="726"/>
+        </scene>
+        <!--Exercise View Controller-->
+        <scene sceneID="3ob-RY-DDM">
+            <objects>
+                <viewController id="tDd-WR-oS3" customClass="ExerciseViewController" customModule="Modori_PT_Proto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H16-ug-7cq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XP4-EW-qiY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZoF-YP-Zah"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7h-R2-jZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2693" y="726"/>
+        </scene>
+        <!--Squat Cam View Controller-->
+        <scene sceneID="gYb-7g-A2q">
+            <objects>
+                <viewController id="WKY-jp-mbl" customClass="SquatCamViewController" customModule="Modori_PT_Proto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z70-Cj-sWx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gOQ-dH-pQV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkg-qR-ZZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3599" y="635"/>
         </scene>
     </scenes>
     <resources>
@@ -390,6 +438,8 @@
         <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="flame" catalog="system" width="108" height="128"/>
+        <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
