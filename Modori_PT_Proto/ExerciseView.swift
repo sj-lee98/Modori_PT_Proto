@@ -20,7 +20,6 @@ struct ExersiseView: View {
             }
         }
         .navigationBarHidden(true)
-
         }
     }
 
