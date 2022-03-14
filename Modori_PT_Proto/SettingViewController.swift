@@ -36,8 +36,28 @@ class SettingViewController: UIViewController {
     }
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
+        let firebaseAuth = Auth.auth()
         
-        // 실제 로그아웃 구현은 아니고 단순한 첫번째 화면으로 돌아가기
-        self.navigationController?.popToRootViewController(animated: true)
+        do {
+            try firebaseAuth.signOut()
+            self.navigationController?.popToRootViewController(animated: true)
+        } catch let sighOutError as NSError {
+            print("LogOut 중에 Error 발생 : \(sighOutError.localizedDescription)")
+        }
+        
+        self.LoginViewController()
+    }
+    
+    
+    private func LoginViewController() {
+    
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let loginViewController = storyboard.instantiateViewController(identifier: "InitialView")
+
+        loginViewController.modalPresentationStyle = .fullScreen
+        loginViewController.modalTransitionStyle = .flipHorizontal
+
+        navigationController?.show(loginViewController, sender: nil)
+        
     }
 }

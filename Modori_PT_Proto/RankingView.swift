@@ -24,6 +24,7 @@ struct RankingListContent: View {
     
     init()
     {
+        // 점수에 따른 오름차순 정렬 추가 해야 함.
         for index in 1...15 {
             let value: Int = Int(drand48() * 100)
             listData.append(RankingItem(name: "이름 : \(index)", score: "점수 : \(value)점" ,imageName: "person.fill"))
@@ -62,11 +63,6 @@ struct RankingListCell: View {
         }
     }
 }
-
-
-
-
-
 
 
 //struct RankingView: View {

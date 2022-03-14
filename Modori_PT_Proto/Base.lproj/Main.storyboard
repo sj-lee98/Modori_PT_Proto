@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lvw-wU-buv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WJU-4O-6g1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1Ru-Hc-wL7">
             <objects>
-                <navigationController id="WJU-4O-6g1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="InitialView" id="WJU-4O-6g1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aUW-2X-O8R">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +27,7 @@
         <!--Login View Controller-->
         <scene sceneID="nKJ-Wq-7rn">
             <objects>
-                <viewController id="Gfy-cv-mkU" customClass="LoginViewController" customModule="Modori_PT_Proto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Gfy-cv-mkU" customClass="LoginViewController" customModule="Modori_PT_Proto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WSL-G8-jcE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,20 +302,8 @@
                     <view key="view" contentMode="scaleToFill" id="BaY-Li-cjb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="운동기록 및 랭킹 표시 화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVx-MT-GuL">
-                                <rect key="frame" x="117" y="440" width="180" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RJJ-p9-oCD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="rVx-MT-GuL" firstAttribute="centerY" secondItem="RJJ-p9-oCD" secondAttribute="centerY" id="Whv-gA-IM9"/>
-                            <constraint firstItem="rVx-MT-GuL" firstAttribute="centerX" secondItem="RJJ-p9-oCD" secondAttribute="centerX" id="pJw-Bp-0xj"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aQA-22-uUa"/>
                 </viewController>

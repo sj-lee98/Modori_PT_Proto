@@ -47,10 +47,24 @@ class EnterEmailViewController: UIViewController {
         
         // Firebase 인증 플랫폼에 전달
         // 신규 사용자 생성
-        Auth.auth().createUser(withEmail: email, password: password) {[weak self] authResult, error in guard let self = self else { return }
+        Auth.auth().createUser(withEmail: email, password: password) {[weak self] authResult, error in
+            guard let self = self else { return }
             
             
-            self.MenuTabController()
+            // 이미 가입한 계정일 경우(error 17007) 로그인 진행.. 다른 경우 오류 코드 표시하기
+            // 마지막 else는 회원가입일 경우(error 코드 없음)
+            if let error = error {
+                let code = ( error as NSError).code
+                switch code {
+                case 17007: // 이미 가입한 계정일때
+                    // 로그인하기
+                    self.loginUser(withEmail: email, password: password)
+                default:
+                    self.errorMessageLabel.text = error.localizedDescription
+                }
+            } else {
+                self.MenuTabController()
+            }
         }
     }
     private func MenuTabController() {
@@ -59,6 +73,18 @@ class EnterEmailViewController: UIViewController {
         menuTabController.modalPresentationStyle = .fullScreen
         navigationController?.show(menuTabController, sender: nil)
         
+    }
+    
+    private func loginUser(withEmail email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) {[weak self] _, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                self.errorMessageLabel.text = error.localizedDescription
+            } else {
+                self.MenuTabController()
+            }
+        }
     }
 }
 
