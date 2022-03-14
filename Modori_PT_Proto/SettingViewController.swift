@@ -11,7 +11,7 @@ import FirebaseAuth
 class SettingViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
-    
+    @IBOutlet weak var resetPasswordButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +28,15 @@ class SettingViewController: UIViewController {
         
         // Firebase 이메일 가져와서 출력 없으면 고객
         let email = Auth.auth().currentUser?.email ?? "고객"
+        
         welcomeLabel.text = """
         환영합니다.
         \(email)님
         """
         
+        // 구글 애플이 아닌 이메일 방식으로 로그인 여부 확인
+        let isEmailSignIn = Auth.auth().currentUser?.providerData[0].providerID == "password"
+        resetPasswordButton.isHidden = !isEmailSignIn
     }
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
@@ -40,12 +44,13 @@ class SettingViewController: UIViewController {
         
         do {
             try firebaseAuth.signOut()
-            self.navigationController?.popToRootViewController(animated: true)
+            //self.navigationController?.popToRootViewController(animated: true)
+            self.LoginViewController()
         } catch let sighOutError as NSError {
             print("LogOut 중에 Error 발생 : \(sighOutError.localizedDescription)")
         }
         
-        self.LoginViewController()
+        //self.LoginViewController()
     }
     
     
@@ -59,5 +64,11 @@ class SettingViewController: UIViewController {
 
         navigationController?.show(loginViewController, sender: nil)
         
+    }
+    
+    // 비밀번호 변경 버튼을 눌렀을때 등록한 이메일로 비밀번호 초기화 메일 보냄
+    @IBAction func resetPasswordButtonTapped(_ sender: UIButton) {
+        let email = Auth.auth().currentUser?.email ?? ""
+        Auth.auth().sendPasswordReset(withEmail: email, completion: nil)
     }
 }
