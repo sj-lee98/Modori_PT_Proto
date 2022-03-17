@@ -67,6 +67,7 @@ class EnterEmailViewController: UIViewController {
             }
         }
     }
+    
     private func MenuTabController() {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let menuTabController = storyboard.instantiateViewController(identifier: "MenuTabController")

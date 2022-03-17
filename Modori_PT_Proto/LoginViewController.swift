@@ -10,16 +10,33 @@ import GoogleSignIn
 import FirebaseAuth
 import AuthenticationServices
 import CryptoKit
+import Lottie
 
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailLoginButton: UIButton!
     @IBOutlet weak var appleLoginButton: UIButton!
     @IBOutlet weak var googleLoginButton: GIDSignInButton!
+    @IBOutlet weak var lottieView: AnimationView!
+    
     
     fileprivate var currentNonce: String?
     
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let animationView = AnimationView(name: "dumbell")
+        lottieView.contentMode = .scaleAspectFit
+        lottieView.addSubview(animationView)
+        animationView.frame = lottieView.bounds
+        animationView.loopMode = .loop
+        animationView.play()
+        
+        
+        
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -28,6 +45,7 @@ class LoginViewController: UIViewController {
         // 네비게이션 컨트롤러가 네비게이션바를 가지고 있고 그것을 숨김.
         navigationController?.navigationBar.isHidden = true
         
+      
         
         // Google Sign In view 선언
         GIDSignIn.sharedInstance().presentingViewController = self
