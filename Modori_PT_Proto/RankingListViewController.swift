@@ -31,7 +31,7 @@ class RankingListViewController: UITableViewController {
                 let rankingList = Array(memberData.values)
                 
                 // 각 cell 총점별 sort
-                self.memberDataList = rankingList.sorted { $0.exerciseDetail.squatPoints + $0.exerciseDetail.lungePoints + $0.exerciseDetail.crunchPoints  < $1.exerciseDetail.squatPoints + $1.exerciseDetail.lungePoints + $1.exerciseDetail.crunchPoints
+                self.memberDataList = rankingList.sorted { $0.exerciseDetail.squatPoints + $0.exerciseDetail.lungePoints + $0.exerciseDetail.crunchPoints  > $1.exerciseDetail.squatPoints + $1.exerciseDetail.lungePoints + $1.exerciseDetail.crunchPoints
                     
                 }
                 

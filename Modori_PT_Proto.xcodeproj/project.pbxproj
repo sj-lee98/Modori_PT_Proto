@@ -28,12 +28,13 @@
 		87C122CC279F9ED200540BD6 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */; };
 		87C122CE279FA56C00540BD6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C122CD279FA56C00540BD6 /* SettingViewController.swift */; };
 		87FCC91927ABAAD700AA3109 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FCC91827ABAAD700AA3109 /* ExerciseViewController.swift */; };
-		8A38A253DEB4C30634D4F0D2 /* Pods_Modori_PT_Proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89B9EF56CAB55F90B5C7703 /* Pods_Modori_PT_Proto.framework */; };
+		EFA7E6AEA1EE6A211F6F7322 /* Pods_Modori_PT_Proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C44DE1A262A1C5C57D667 /* Pods_Modori_PT_Proto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		633433E2649B2868BC0A3CC4 /* Pods-Modori_PT_Proto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modori_PT_Proto.debug.xcconfig"; path = "Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto.debug.xcconfig"; sourceTree = "<group>"; };
-		78C5152E5CCCC74C254346EB /* Pods-Modori_PT_Proto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modori_PT_Proto.release.xcconfig"; path = "Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto.release.xcconfig"; sourceTree = "<group>"; };
+		014CE6FB55EE4A3D9CB17039 /* Pods-Modori_PT_Proto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modori_PT_Proto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto.debug.xcconfig"; sourceTree = "<group>"; };
+		3F3C44DE1A262A1C5C57D667 /* Pods_Modori_PT_Proto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modori_PT_Proto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		544A0F9A94D1C87E31E44C3F /* Pods-Modori_PT_Proto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modori_PT_Proto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto.release.xcconfig"; sourceTree = "<group>"; };
 		8702D32F27DF12FB00AC51CE /* Modori_PT_Proto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Modori_PT_Proto.entitlements; sourceTree = "<group>"; };
 		8733BED227E2F718001A84FB /* modoriAction.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = modoriAction.mlmodel; sourceTree = "<group>"; };
 		8733BED427E2F729001A84FB /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
 		87C122CD279FA56C00540BD6 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		87FCC91827ABAAD700AA3109 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
-		F89B9EF56CAB55F90B5C7703 /* Pods_Modori_PT_Proto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modori_PT_Proto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,28 +66,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A38A253DEB4C30634D4F0D2 /* Pods_Modori_PT_Proto.framework in Frameworks */,
+				EFA7E6AEA1EE6A211F6F7322 /* Pods_Modori_PT_Proto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		003E57C83EE9217A98277D42 /* Pods */ = {
+		0CA7056EB80E3857DF2EC389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				633433E2649B2868BC0A3CC4 /* Pods-Modori_PT_Proto.debug.xcconfig */,
-				78C5152E5CCCC74C254346EB /* Pods-Modori_PT_Proto.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		550FB8F8E50145505BEF6F46 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F89B9EF56CAB55F90B5C7703 /* Pods_Modori_PT_Proto.framework */,
+				3F3C44DE1A262A1C5C57D667 /* Pods_Modori_PT_Proto.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3961D8C946C9605A0E7B3C32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				014CE6FB55EE4A3D9CB17039 /* Pods-Modori_PT_Proto.debug.xcconfig */,
+				544A0F9A94D1C87E31E44C3F /* Pods-Modori_PT_Proto.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		87C122A9279F88D900540BD6 = {
@@ -95,8 +95,8 @@
 			children = (
 				87C122B4279F88D900540BD6 /* Modori_PT_Proto */,
 				87C122B3279F88D900540BD6 /* Products */,
-				003E57C83EE9217A98277D42 /* Pods */,
-				550FB8F8E50145505BEF6F46 /* Frameworks */,
+				3961D8C946C9605A0E7B3C32 /* Pods */,
+				0CA7056EB80E3857DF2EC389 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,18 +118,18 @@
 				87C122B5279F88D900540BD6 /* AppDelegate.swift */,
 				87C122B7279F88D900540BD6 /* SceneDelegate.swift */,
 				87C122BB279F88D900540BD6 /* Main.storyboard */,
+				87C122C9279F90C000540BD6 /* LoginViewController.swift */,
+				87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */,
+				87407D3027A26C3A00FC4A4D /* MenuTabController.swift */,
+				87FCC91827ABAAD700AA3109 /* ExerciseViewController.swift */,
 				8733BED427E2F729001A84FB /* VideoCapture.swift */,
 				8733BED827E2F7F5001A84FB /* Predictor.swift */,
 				8748BFF627E0614C00FD7EB8 /* RankingListViewController.swift */,
-				8748C00227E06AE000FD7EB8 /* RankingDetailViewController.swift */,
-				87FCC91827ABAAD700AA3109 /* ExerciseViewController.swift */,
-				87407D3027A26C3A00FC4A4D /* MenuTabController.swift */,
-				87C122CD279FA56C00540BD6 /* SettingViewController.swift */,
-				8748BFFA27E0631800FD7EB8 /* MemberData.swift */,
 				8748BFFE27E064DD00FD7EB8 /* RankingListCell.swift */,
 				8748BFFF27E064DD00FD7EB8 /* RankingListCell.xib */,
-				87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */,
-				87C122C9279F90C000540BD6 /* LoginViewController.swift */,
+				8748C00227E06AE000FD7EB8 /* RankingDetailViewController.swift */,
+				87C122CD279FA56C00540BD6 /* SettingViewController.swift */,
+				8748BFFA27E0631800FD7EB8 /* MemberData.swift */,
 				87C122BE279F88DA00540BD6 /* Assets.xcassets */,
 				87C122C0279F88DA00540BD6 /* LaunchScreen.storyboard */,
 				87C122C3279F88DA00540BD6 /* Info.plist */,
@@ -145,12 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87C122C6279F88DA00540BD6 /* Build configuration list for PBXNativeTarget "Modori_PT_Proto" */;
 			buildPhases = (
-				6823450057BF213968B6AED7 /* [CP] Check Pods Manifest.lock */,
+				73706CDE422434E109B04B8E /* [CP] Check Pods Manifest.lock */,
 				87C122AE279F88D900540BD6 /* Sources */,
 				87C122AF279F88D900540BD6 /* Frameworks */,
 				87C122B0279F88D900540BD6 /* Resources */,
-				095FF27B92EBECBB928F64F3 /* [CP] Embed Pods Frameworks */,
-				C4DFD996EA25D2F64C8FF2BD /* [CP] Copy Pods Resources */,
+				0A87B4B7B32BB97A732BFD7A /* [CP] Embed Pods Frameworks */,
+				204E7FB1CC762E3F9D402B83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,24 +212,75 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		095FF27B92EBECBB928F64F3 /* [CP] Embed Pods Frameworks */ = {
+		0A87B4B7B32BB97A732BFD7A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseDatabase/FirebaseDatabase.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseDatabase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6823450057BF213968B6AED7 /* [CP] Check Pods Manifest.lock */ = {
+		204E7FB1CC762E3F9D402B83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73706CDE422434E109B04B8E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,23 +300,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C4DFD996EA25D2F64C8FF2BD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -432,7 +466,7 @@
 		};
 		87C122C7279F88DA00540BD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 633433E2649B2868BC0A3CC4 /* Pods-Modori_PT_Proto.debug.xcconfig */;
+			baseConfigurationReference = 014CE6FB55EE4A3D9CB17039 /* Pods-Modori_PT_Proto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,6 +476,7 @@
 				DEVELOPMENT_TEAM = 8MKGM4RXJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Modori_PT_Proto/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Modori-PT는 동작인식을 위해 카메라 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -462,7 +497,7 @@
 		};
 		87C122C8279F88DA00540BD6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78C5152E5CCCC74C254346EB /* Pods-Modori_PT_Proto.release.xcconfig */;
+			baseConfigurationReference = 544A0F9A94D1C87E31E44C3F /* Pods-Modori_PT_Proto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +507,7 @@
 				DEVELOPMENT_TEAM = 8MKGM4RXJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Modori_PT_Proto/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Modori-PT는 동작인식을 위해 카메라 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

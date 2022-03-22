@@ -108,9 +108,12 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
 //Apple Sign in
 extension LoginViewController {
     func startSignInWithAppleFlow() {
+        // flow 1
         let nonce = randomNonceString()
         currentNonce = nonce
         let appleIDProvider = ASAuthorizationAppleIDProvider()
+        
+        // request에 nonce값이 붙어서 추후에 무결성 검증
         let request = appleIDProvider.createRequest()
         request.requestedScopes = [.fullName, .email]
         request.nonce = sha256(nonce)
@@ -121,6 +124,7 @@ extension LoginViewController {
         authorizationController.performRequests()
     }
     
+    // flow 2. (nonce -> sha256(nonce))
     private func sha256(_ input: String) -> String {
         let inputData = Data(input.utf8)
         let hashedData = SHA256.hash(data: inputData)
@@ -132,6 +136,7 @@ extension LoginViewController {
     }
     
     // Adapted from https://auth0.com/docs/api-auth/tutorials/nonce#generate-a-cryptographically-random-nonce
+    // nonce 생성
     private func randomNonceString(length: Int = 32) -> String {
         precondition(length > 0)
         let charset: Array<Character> =
