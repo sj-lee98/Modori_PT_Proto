@@ -116,6 +116,8 @@ extension LoginViewController {
         // request에 nonce값이 붙어서 추후에 무결성 검증
         let request = appleIDProvider.createRequest()
         request.requestedScopes = [.fullName, .email]
+        
+        // flow 2. (nonce -> sha256(nonce))
         request.nonce = sha256(nonce)
         
         let authorizationController = ASAuthorizationController(authorizationRequests: [request])
@@ -124,7 +126,7 @@ extension LoginViewController {
         authorizationController.performRequests()
     }
     
-    // flow 2. (nonce -> sha256(nonce))
+
     private func sha256(_ input: String) -> String {
         let inputData = Data(input.utf8)
         let hashedData = SHA256.hash(data: inputData)
