@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8733BED327E2F718001A84FB /* modoriAction.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8733BED227E2F718001A84FB /* modoriAction.mlmodel */; };
-		8733BED927E2F7F5001A84FB /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733BED827E2F7F5001A84FB /* Predictor.swift */; };
+		5735ED7E282B8D9000A97687 /* WorkoutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735ED7D282B8D9000A97687 /* WorkoutList.swift */; };
+		5735ED802831E55E00A97687 /* MyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735ED7F2831E55E00A97687 /* MyDetailViewController.swift */; };
+		57502538F42667A19AEBD5DC /* Pods_Modori_PT_Proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1553D7FA79D963AD0C2F73D0 /* Pods_Modori_PT_Proto.framework */; };
+		872A2B5727F2EF7600231FA9 /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 872A2B5627F2EF7600231FA9 /* pic.png */; };
+		8733BED327E2F718001A84FB /* ExerciseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8733BED227E2F718001A84FB /* ExerciseClassifier.mlmodel */; };
 		87407D2F27A2696E00FC4A4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87407D2E27A2696E00FC4A4D /* GoogleService-Info.plist */; };
 		87407D3127A26C3A00FC4A4D /* MenuTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87407D3027A26C3A00FC4A4D /* MenuTabController.swift */; };
 		8748BFF327E0559D00FD7EB8 /* man.json in Resources */ = {isa = PBXBuildFile; fileRef = 8748BFF227E0559D00FD7EB8 /* man.json */; };
@@ -18,10 +21,7 @@
 		8748C00127E064DD00FD7EB8 /* RankingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8748BFFF27E064DD00FD7EB8 /* RankingListCell.xib */; };
 		8748C00327E06AE000FD7EB8 /* RankingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748C00227E06AE000FD7EB8 /* RankingDetailViewController.swift */; };
 		8748C00527E06D4600FD7EB8 /* dumbell.json in Resources */ = {isa = PBXBuildFile; fileRef = 8748C00427E06D4600FD7EB8 /* dumbell.json */; };
-		87B34D5F27EAECEF00D7BC21 /* Action Classifier in Resources */ = {isa = PBXBuildFile; fileRef = 87B34D5E27EAECEF00D7BC21 /* Action Classifier */; };
-		87B34D6627EAED1800D7BC21 /* Utility in Resources */ = {isa = PBXBuildFile; fileRef = 87B34D6527EAED1800D7BC21 /* Utility */; };
-		87B34D6827EAED2300D7BC21 /* Video Capture in Resources */ = {isa = PBXBuildFile; fileRef = 87B34D6727EAED2300D7BC21 /* Video Capture */; };
-		87B34D6C27EAEDBA00D7BC21 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 87B34D6B27EAEDBA00D7BC21 /* Views */; };
+		876A5E1D283A80D3001A5B59 /* detailLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 876A5E1C283A80D3001A5B59 /* detailLottie.json */; };
 		87B34D6E27EAEE9100D7BC21 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D6D27EAEE9100D7BC21 /* MainViewController.swift */; };
 		87B34D7027EAEEA800D7BC21 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D6F27EAEEA800D7BC21 /* SummaryViewController.swift */; };
 		87B34D7227EAEF1F00D7BC21 /* AVCaptureDevice+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D7127EAEF1F00D7BC21 /* AVCaptureDevice+FrameRate.swift */; };
@@ -34,7 +34,6 @@
 		87B34D7D27EAEF3800D7BC21 /* Pose+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D6427EAED0900D7BC21 /* Pose+Empty.swift */; };
 		87B34D7E27EAEF3A00D7BC21 /* Pose+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D6327EAED0900D7BC21 /* Pose+Connection.swift */; };
 		87B34D8027EAEF3D00D7BC21 /* ActionPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D7F27EAEF3D00D7BC21 /* ActionPrediction.swift */; };
-		87B34D8227EAEF4200D7BC21 /* ExerciseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D8127EAEF4200D7BC21 /* ExerciseClassifier.mlmodel */; };
 		87B34D8427EAEF4D00D7BC21 /* ExerciseClassifier+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D8327EAEF4D00D7BC21 /* ExerciseClassifier+FrameRate.swift */; };
 		87B34D8627EAEF4F00D7BC21 /* ExerciseClassifier+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D8527EAEF4F00D7BC21 /* ExerciseClassifier+Label.swift */; };
 		87B34D8827EAEF5300D7BC21 /* ExerciseClassifier+PredictAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B34D8727EAEF5200D7BC21 /* ExerciseClassifier+PredictAction.swift */; };
@@ -49,16 +48,16 @@
 		87C122CA279F90C000540BD6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C122C9279F90C000540BD6 /* LoginViewController.swift */; };
 		87C122CC279F9ED200540BD6 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */; };
 		87C122CE279FA56C00540BD6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C122CD279FA56C00540BD6 /* SettingViewController.swift */; };
-		EFA7E6AEA1EE6A211F6F7322 /* Pods_Modori_PT_Proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C44DE1A262A1C5C57D667 /* Pods_Modori_PT_Proto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		014CE6FB55EE4A3D9CB17039 /* Pods-Modori_PT_Proto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modori_PT_Proto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto.debug.xcconfig"; sourceTree = "<group>"; };
-		3F3C44DE1A262A1C5C57D667 /* Pods_Modori_PT_Proto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modori_PT_Proto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		544A0F9A94D1C87E31E44C3F /* Pods-Modori_PT_Proto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modori_PT_Proto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto.release.xcconfig"; sourceTree = "<group>"; };
+		0FF2C458C1A95B719CB114CC /* Pods-Modori_PT_Proto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modori_PT_Proto.release.xcconfig"; path = "Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto.release.xcconfig"; sourceTree = "<group>"; };
+		1553D7FA79D963AD0C2F73D0 /* Pods_Modori_PT_Proto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modori_PT_Proto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5735ED7D282B8D9000A97687 /* WorkoutList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutList.swift; sourceTree = "<group>"; };
+		5735ED7F2831E55E00A97687 /* MyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailViewController.swift; sourceTree = "<group>"; };
 		8702D32F27DF12FB00AC51CE /* Modori_PT_Proto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Modori_PT_Proto.entitlements; sourceTree = "<group>"; };
-		8733BED227E2F718001A84FB /* modoriAction.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = modoriAction.mlmodel; sourceTree = "<group>"; };
-		8733BED827E2F7F5001A84FB /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		872A2B5627F2EF7600231FA9 /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
+		8733BED227E2F718001A84FB /* ExerciseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ExerciseClassifier.mlmodel; sourceTree = "<group>"; };
 		87407D2E27A2696E00FC4A4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87407D3027A26C3A00FC4A4D /* MenuTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabController.swift; sourceTree = "<group>"; };
 		8748BFF227E0559D00FD7EB8 /* man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = man.json; sourceTree = "<group>"; };
@@ -68,15 +67,12 @@
 		8748BFFF27E064DD00FD7EB8 /* RankingListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingListCell.xib; sourceTree = "<group>"; };
 		8748C00227E06AE000FD7EB8 /* RankingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingDetailViewController.swift; sourceTree = "<group>"; };
 		8748C00427E06D4600FD7EB8 /* dumbell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dumbell.json; sourceTree = "<group>"; };
-		87B34D5E27EAECEF00D7BC21 /* Action Classifier */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Action Classifier"; sourceTree = "<group>"; };
+		876A5E1C283A80D3001A5B59 /* detailLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = detailLottie.json; path = ../../../../../../Downloads/detailLottie.json; sourceTree = "<group>"; };
 		87B34D6127EAED0900D7BC21 /* Pose+Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pose+Landmark.swift"; sourceTree = "<group>"; };
 		87B34D6227EAED0900D7BC21 /* Pose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
 		87B34D6327EAED0900D7BC21 /* Pose+Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pose+Connection.swift"; sourceTree = "<group>"; };
 		87B34D6427EAED0900D7BC21 /* Pose+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pose+Empty.swift"; sourceTree = "<group>"; };
-		87B34D6527EAED1800D7BC21 /* Utility */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utility; sourceTree = "<group>"; };
-		87B34D6727EAED2300D7BC21 /* Video Capture */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Video Capture"; sourceTree = "<group>"; };
 		87B34D6A27EAED2C00D7BC21 /* VideoProcessingChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessingChain.swift; sourceTree = "<group>"; };
-		87B34D6B27EAEDBA00D7BC21 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
 		87B34D6D27EAEE9100D7BC21 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		87B34D6F27EAEEA800D7BC21 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		87B34D7127EAEF1F00D7BC21 /* AVCaptureDevice+FrameRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+FrameRate.swift"; sourceTree = "<group>"; };
@@ -85,7 +81,6 @@
 		87B34D7727EAEF2500D7BC21 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		87B34D7927EAEF2C00D7BC21 /* PerformanceReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceReporter.swift; sourceTree = "<group>"; };
 		87B34D7F27EAEF3D00D7BC21 /* ActionPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPrediction.swift; sourceTree = "<group>"; };
-		87B34D8127EAEF4200D7BC21 /* ExerciseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ExerciseClassifier.mlmodel; path = "Action Classifier/ExerciseClassifier.mlmodel"; sourceTree = "<group>"; };
 		87B34D8327EAEF4D00D7BC21 /* ExerciseClassifier+FrameRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+FrameRate.swift"; sourceTree = "<group>"; };
 		87B34D8527EAEF4F00D7BC21 /* ExerciseClassifier+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+Label.swift"; sourceTree = "<group>"; };
 		87B34D8727EAEF5200D7BC21 /* ExerciseClassifier+PredictAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+PredictAction.swift"; sourceTree = "<group>"; };
@@ -101,6 +96,7 @@
 		87C122C9279F90C000540BD6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
 		87C122CD279FA56C00540BD6 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		90195AC502FDEC90E7275563 /* Pods-Modori_PT_Proto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modori_PT_Proto.debug.xcconfig"; path = "Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,77 +104,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFA7E6AEA1EE6A211F6F7322 /* Pods_Modori_PT_Proto.framework in Frameworks */,
+				57502538F42667A19AEBD5DC /* Pods_Modori_PT_Proto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CA7056EB80E3857DF2EC389 /* Frameworks */ = {
+		2B0DA1B878F1E454219B0848 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3F3C44DE1A262A1C5C57D667 /* Pods_Modori_PT_Proto.framework */,
+				90195AC502FDEC90E7275563 /* Pods-Modori_PT_Proto.debug.xcconfig */,
+				0FF2C458C1A95B719CB114CC /* Pods-Modori_PT_Proto.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		3961D8C946C9605A0E7B3C32 /* Pods */ = {
+		872A2B5327F2C43400231FA9 /* OperateMachineLearning */ = {
 			isa = PBXGroup;
 			children = (
-				014CE6FB55EE4A3D9CB17039 /* Pods-Modori_PT_Proto.debug.xcconfig */,
-				544A0F9A94D1C87E31E44C3F /* Pods-Modori_PT_Proto.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		87B34D6027EAED0900D7BC21 /* Pose */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pose;
-			sourceTree = "<group>";
-		};
-		87B34D6927EAED2C00D7BC21 /* Video Processing Chain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Video Processing Chain";
-			sourceTree = "<group>";
-		};
-		87C122A9279F88D900540BD6 = {
-			isa = PBXGroup;
-			children = (
-				87C122B4279F88D900540BD6 /* Modori_PT_Proto */,
-				87C122B3279F88D900540BD6 /* Products */,
-				3961D8C946C9605A0E7B3C32 /* Pods */,
-				0CA7056EB80E3857DF2EC389 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		87C122B3279F88D900540BD6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				87C122B2279F88D900540BD6 /* Modori_PT_Proto.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		87C122B4279F88D900540BD6 /* Modori_PT_Proto */ = {
-			isa = PBXGroup;
-			children = (
-				87B34D5E27EAECEF00D7BC21 /* Action Classifier */,
-				87B34D6027EAED0900D7BC21 /* Pose */,
-				87B34D6527EAED1800D7BC21 /* Utility */,
-				8733BED227E2F718001A84FB /* modoriAction.mlmodel */,
-				87B34D6727EAED2300D7BC21 /* Video Capture */,
-				87B34D6B27EAEDBA00D7BC21 /* Views */,
-				87B34D6927EAED2C00D7BC21 /* Video Processing Chain */,
-				8748BFF227E0559D00FD7EB8 /* man.json */,
-				8748C00427E06D4600FD7EB8 /* dumbell.json */,
-				8702D32F27DF12FB00AC51CE /* Modori_PT_Proto.entitlements */,
-				87B34D8127EAEF4200D7BC21 /* ExerciseClassifier.mlmodel */,
-				87C122B5279F88D900540BD6 /* AppDelegate.swift */,
+				8733BED227E2F718001A84FB /* ExerciseClassifier.mlmodel */,
 				87B34D6A27EAED2C00D7BC21 /* VideoProcessingChain.swift */,
 				87B34D7127EAEF1F00D7BC21 /* AVCaptureDevice+FrameRate.swift */,
 				87B34D8327EAEF4D00D7BC21 /* ExerciseClassifier+FrameRate.swift */,
@@ -195,19 +140,68 @@
 				87B34D6127EAED0900D7BC21 /* Pose+Landmark.swift */,
 				87B34D7927EAEF2C00D7BC21 /* PerformanceReporter.swift */,
 				87B34D7327EAEF2100D7BC21 /* AVCaptureDeviceInput+Camera.swift */,
-				87C122B7279F88D900540BD6 /* SceneDelegate.swift */,
-				87C122BB279F88D900540BD6 /* Main.storyboard */,
+			);
+			path = OperateMachineLearning;
+			sourceTree = "<group>";
+		};
+		872A2B5427F2C4C700231FA9 /* LottieAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				876A5E1C283A80D3001A5B59 /* detailLottie.json */,
+				8748BFF227E0559D00FD7EB8 /* man.json */,
+				8748C00427E06D4600FD7EB8 /* dumbell.json */,
+			);
+			path = LottieAnimation;
+			sourceTree = "<group>";
+		};
+		872A2B5527F2C60B00231FA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5735ED7F2831E55E00A97687 /* MyDetailViewController.swift */,
 				87B34D6D27EAEE9100D7BC21 /* MainViewController.swift */,
 				87B34D6F27EAEEA800D7BC21 /* SummaryViewController.swift */,
 				87C122C9279F90C000540BD6 /* LoginViewController.swift */,
 				87C122CB279F9ED200540BD6 /* EnterEmailViewController.swift */,
-				87407D3027A26C3A00FC4A4D /* MenuTabController.swift */,
-				8733BED827E2F7F5001A84FB /* Predictor.swift */,
 				8748BFF627E0614C00FD7EB8 /* RankingListViewController.swift */,
-				8748BFFE27E064DD00FD7EB8 /* RankingListCell.swift */,
-				8748BFFF27E064DD00FD7EB8 /* RankingListCell.xib */,
 				8748C00227E06AE000FD7EB8 /* RankingDetailViewController.swift */,
 				87C122CD279FA56C00540BD6 /* SettingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87C122A9279F88D900540BD6 = {
+			isa = PBXGroup;
+			children = (
+				87C122B4279F88D900540BD6 /* Modori_PT_Proto */,
+				87C122B3279F88D900540BD6 /* Products */,
+				2B0DA1B878F1E454219B0848 /* Pods */,
+				B721B0FBEE1B0F30F1789244 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87C122B3279F88D900540BD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87C122B2279F88D900540BD6 /* Modori_PT_Proto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87C122B4279F88D900540BD6 /* Modori_PT_Proto */ = {
+			isa = PBXGroup;
+			children = (
+				8702D32F27DF12FB00AC51CE /* Modori_PT_Proto.entitlements */,
+				872A2B5327F2C43400231FA9 /* OperateMachineLearning */,
+				872A2B5527F2C60B00231FA9 /* View */,
+				872A2B5427F2C4C700231FA9 /* LottieAnimation */,
+				87C122B5279F88D900540BD6 /* AppDelegate.swift */,
+				872A2B5627F2EF7600231FA9 /* pic.png */,
+				87C122B7279F88D900540BD6 /* SceneDelegate.swift */,
+				87C122BB279F88D900540BD6 /* Main.storyboard */,
+				87407D3027A26C3A00FC4A4D /* MenuTabController.swift */,
+				8748BFFE27E064DD00FD7EB8 /* RankingListCell.swift */,
+				8748BFFF27E064DD00FD7EB8 /* RankingListCell.xib */,
+				5735ED7D282B8D9000A97687 /* WorkoutList.swift */,
 				8748BFFA27E0631800FD7EB8 /* MemberData.swift */,
 				87C122BE279F88DA00540BD6 /* Assets.xcassets */,
 				87C122C0279F88DA00540BD6 /* LaunchScreen.storyboard */,
@@ -217,6 +211,14 @@
 			path = Modori_PT_Proto;
 			sourceTree = "<group>";
 		};
+		B721B0FBEE1B0F30F1789244 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1553D7FA79D963AD0C2F73D0 /* Pods_Modori_PT_Proto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,12 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87C122C6279F88DA00540BD6 /* Build configuration list for PBXNativeTarget "Modori_PT_Proto" */;
 			buildPhases = (
-				73706CDE422434E109B04B8E /* [CP] Check Pods Manifest.lock */,
+				A0D5EFEED179BA730A125ED9 /* [CP] Check Pods Manifest.lock */,
 				87C122AE279F88D900540BD6 /* Sources */,
 				87C122AF279F88D900540BD6 /* Frameworks */,
 				87C122B0279F88D900540BD6 /* Resources */,
-				0A87B4B7B32BB97A732BFD7A /* [CP] Embed Pods Frameworks */,
-				204E7FB1CC762E3F9D402B83 /* [CP] Copy Pods Resources */,
+				E1F5799A7E61D83C0747DD38 /* [CP] Embed Pods Frameworks */,
+				4C01C109002F79BA84D40511 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,16 +280,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B34D6C27EAEDBA00D7BC21 /* Views in Resources */,
+				872A2B5727F2EF7600231FA9 /* pic.png in Resources */,
 				87C122C2279F88DA00540BD6 /* LaunchScreen.storyboard in Resources */,
 				87407D2F27A2696E00FC4A4D /* GoogleService-Info.plist in Resources */,
-				87B34D6827EAED2300D7BC21 /* Video Capture in Resources */,
 				8748C00527E06D4600FD7EB8 /* dumbell.json in Resources */,
-				87B34D6627EAED1800D7BC21 /* Utility in Resources */,
 				87C122BF279F88DA00540BD6 /* Assets.xcassets in Resources */,
-				87B34D5F27EAECEF00D7BC21 /* Action Classifier in Resources */,
 				8748BFF327E0559D00FD7EB8 /* man.json in Resources */,
 				8748C00127E064DD00FD7EB8 /* RankingListCell.xib in Resources */,
+				876A5E1D283A80D3001A5B59 /* detailLottie.json in Resources */,
 				87C122BD279F88D900540BD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,75 +295,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A87B4B7B32BB97A732BFD7A /* [CP] Embed Pods Frameworks */ = {
+		4C01C109002F79BA84D40511 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
-				"${BUILT_PRODUCTS_DIR}/FirebaseDatabase/FirebaseDatabase.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseDatabase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		204E7FB1CC762E3F9D402B83 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		73706CDE422434E109B04B8E /* [CP] Check Pods Manifest.lock */ = {
+		A0D5EFEED179BA730A125ED9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,6 +334,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E1F5799A7E61D83C0747DD38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Modori_PT_Proto/Pods-Modori_PT_Proto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -399,16 +365,16 @@
 				87B34D7027EAEEA800D7BC21 /* SummaryViewController.swift in Sources */,
 				87C122B8279F88D900540BD6 /* SceneDelegate.swift in Sources */,
 				87B34D7427EAEF2100D7BC21 /* AVCaptureDeviceInput+Camera.swift in Sources */,
-				8733BED927E2F7F5001A84FB /* Predictor.swift in Sources */,
 				87B34D7C27EAEF3600D7BC21 /* Pose.swift in Sources */,
 				8748C00027E064DD00FD7EB8 /* RankingListCell.swift in Sources */,
 				87B34D7E27EAEF3A00D7BC21 /* Pose+Connection.swift in Sources */,
+				5735ED802831E55E00A97687 /* MyDetailViewController.swift in Sources */,
 				87B34D7B27EAEF3400D7BC21 /* Pose+Landmark.swift in Sources */,
 				87B34D8D27EAEF7900D7BC21 /* VideoProcessingChain.swift in Sources */,
 				87B34D7227EAEF1F00D7BC21 /* AVCaptureDevice+FrameRate.swift in Sources */,
 				87B34D8627EAEF4F00D7BC21 /* ExerciseClassifier+Label.swift in Sources */,
-				87B34D8227EAEF4200D7BC21 /* ExerciseClassifier.mlmodel in Sources */,
 				87C122CE279FA56C00540BD6 /* SettingViewController.swift in Sources */,
+				5735ED7E282B8D9000A97687 /* WorkoutList.swift in Sources */,
 				87B34D8027EAEF3D00D7BC21 /* ActionPrediction.swift in Sources */,
 				87B34D8C27EAEF5700D7BC21 /* ExerciseClassifier+Singleton.swift in Sources */,
 				87407D3127A26C3A00FC4A4D /* MenuTabController.swift in Sources */,
@@ -417,7 +383,7 @@
 				87B34D8A27EAEF5500D7BC21 /* ExerciseClassifier+LabelCheck.swift in Sources */,
 				8748C00327E06AE000FD7EB8 /* RankingDetailViewController.swift in Sources */,
 				87B34D8827EAEF5300D7BC21 /* ExerciseClassifier+PredictAction.swift in Sources */,
-				8733BED327E2F718001A84FB /* modoriAction.mlmodel in Sources */,
+				8733BED327E2F718001A84FB /* ExerciseClassifier.mlmodel in Sources */,
 				8748BFFB27E0631800FD7EB8 /* MemberData.swift in Sources */,
 				87B34D7827EAEF2500D7BC21 /* VideoCapture.swift in Sources */,
 				87B34D7A27EAEF2C00D7BC21 /* PerformanceReporter.swift in Sources */,
@@ -485,6 +451,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -566,14 +533,16 @@
 		};
 		87C122C7279F88DA00540BD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 014CE6FB55EE4A3D9CB17039 /* Pods-Modori_PT_Proto.debug.xcconfig */;
+			baseConfigurationReference = 90195AC502FDEC90E7275563 /* Pods-Modori_PT_Proto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Modori_PT_Proto/Modori_PT_Proto.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8MKGM4RXJ3;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Modori_PT_Proto/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Modori-PT는 동작인식을 위해 카메라 접근이 필요합니다.";
@@ -587,8 +556,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Modori-PT-Proto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -597,14 +568,16 @@
 		};
 		87C122C8279F88DA00540BD6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 544A0F9A94D1C87E31E44C3F /* Pods-Modori_PT_Proto.release.xcconfig */;
+			baseConfigurationReference = 0FF2C458C1A95B719CB114CC /* Pods-Modori_PT_Proto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Modori_PT_Proto/Modori_PT_Proto.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8MKGM4RXJ3;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Modori_PT_Proto/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Modori-PT는 동작인식을 위해 카메라 접근이 필요합니다.";
@@ -618,8 +591,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Modori-PT-Proto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

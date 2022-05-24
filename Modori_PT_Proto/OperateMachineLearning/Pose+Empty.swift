@@ -12,7 +12,7 @@ import CoreML
 extension Pose {
     /// A multiarray with the same dimensions as human body pose
     /// that sets each element to zero.
-    ///
+    /// 사람 인식 초기화 코드
     /// This instance has the same shape as the multiarray from a
     /// `VNHumanBodyPoseObservation` instance.
     /// - Tag: emptyPoseMultiArray

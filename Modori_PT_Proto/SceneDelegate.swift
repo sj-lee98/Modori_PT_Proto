@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Modori_PT_Proto
 //
-//  Created by 이성주 on 2022/01/25.
+//  Created by Modori on 2022/01/25.
 //
 
 import UIKit

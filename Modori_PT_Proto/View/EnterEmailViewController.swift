@@ -2,11 +2,12 @@
 //  EnterEmailViewController.swift
 //  Modori_PT_Proto
 //
-//  Created by 이성주 on 2022/01/25.
+//  Created by Modori on 2022/01/25.
 //
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class EnterEmailViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
@@ -17,12 +18,9 @@ class EnterEmailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // 초기 뷰 로드시 다음 버튼 비활성화
         // 추후 이메일/비밀번호 입력완료시 활성화
         nextButton.isEnabled = false
-        
-        
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
@@ -30,15 +28,12 @@ class EnterEmailViewController: UIViewController {
         emailTextField.becomeFirstResponder()
     }
     
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Navigaion Bar 보이기
         navigationController?.navigationBar.isHidden = false
     }
-    
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         // Firebase 이메일/비밀번호 인증
@@ -63,9 +58,38 @@ class EnterEmailViewController: UIViewController {
                     self.errorMessageLabel.text = error.localizedDescription
                 }
             } else {
-                self.MenuTabController()
+                
+                self.AfterMenuTabController()
             }
         }
+    }
+    
+    private func AfterMenuTabController() {
+        let ref = Database.database().reference()
+        let uid = Auth.auth().currentUser?.uid ?? "UID"
+        let email = Auth.auth().currentUser?.email ?? "고객"
+        
+        ref.child("Info/Users/\(uid)/Email").setValue(email)
+        ref.child("Info/Users/\(uid)/Gender").setValue("Unknown")
+        ref.child("Info/Users/\(uid)/Name").setValue("Unknown")
+        ref.child("Info/Users/\(uid)/phoneNumber").setValue("Unknown")
+        ref.child("Info/Users/\(uid)/weight").setValue("Unknown")
+        
+        ref.child("Workout/Users/\(uid)/Crunch").setValue(0)
+        ref.child("Workout/Users/\(uid)/Jumping_Jacks").setValue(0)
+        ref.child("Workout/Users/\(uid)/Lunge").setValue(0)
+        ref.child("Workout/Users/\(uid)/Squat").setValue(0)
+        ref.child("Workout/Users/\(uid)/Others").setValue(0)
+        
+        ref.child("Rank/Users/\(uid)/EachPoints/Crunch").setValue(0)
+        ref.child("Rank/Users/\(uid)/EachPoints/Jumping_Jacks").setValue(0)
+        ref.child("Rank/Users/\(uid)/EachPoints/Lunge").setValue(0)
+        ref.child("Rank/Users/\(uid)/EachPoints/Others").setValue(0)
+        ref.child("Rank/Users/\(uid)/EachPoints/Squat").setValue(0)
+        ref.child("Rank/Users/\(uid)/TotalPoint").setValue(0)
+        ref.child("Rank/Users/\(uid)/Name").setValue("Unknown")
+        
+        self.MenuTabController()
     }
     
     private func MenuTabController() {
@@ -73,7 +97,6 @@ class EnterEmailViewController: UIViewController {
         let menuTabController = storyboard.instantiateViewController(identifier: "MenuTabController")
         menuTabController.modalPresentationStyle = .fullScreen
         navigationController?.show(menuTabController, sender: nil)
-        
     }
     
     private func loginUser(withEmail email: String, password: String) {
@@ -90,7 +113,6 @@ class EnterEmailViewController: UIViewController {
 }
 
 extension EnterEmailViewController: UITextFieldDelegate {
-    
     // 이메일/비밀번호 입력값이 있는지 확인해서 있으면 비활성화 되었던 다음 버튼 활성화
     func textFieldDidEndEditing(_ textField: UITextField) {
         let isEmailEmpty = emailTextField.text == ""
@@ -98,8 +120,6 @@ extension EnterEmailViewController: UITextFieldDelegate {
         
         nextButton.isEnabled = !isEmailEmpty && !isPasswordEmpty
     }
-    
-    
     // 입력 다 하고 리턴 버튼 누르면 키보드 내리기
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)

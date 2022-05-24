@@ -15,7 +15,7 @@ extension Pose {
     typealias JointName = VNHumanBodyPoseObservation.JointName
 
     /// The name and location of a point of interest on a human body.
-    ///
+    /// 랜드마크(관절)에 원형 포인트 그리기
     /// Each landmark defines its location in an image and the name of the body
     /// joint it represents, such as nose, left eye, right knee, and so on.
     struct Landmark {

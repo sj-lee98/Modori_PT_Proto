@@ -10,6 +10,7 @@ import UIKit
 
 extension Pose {
     /// Represents a line between two landmarks.
+    /// 두 개의 랜드마크 사이에 실선을 그어줌
     struct Connection: Equatable {
         static let width: CGFloat = 12.0
 
@@ -80,24 +81,30 @@ extension Pose {
 
 extension Pose {
     /// A series of joint pairs that define the wireframe lines of a pose.
+    /// 랜드마크 인식 부위
     static let jointPairs: [(joint1: JointName, joint2: JointName)] = [
         // The left arm's connections.
+        // 좌측 팔 연결
         (.leftShoulder, .leftElbow),
         (.leftElbow, .leftWrist),
 
         // The left leg's connections.
+        // 좌측 다리 연결
         (.leftHip, .leftKnee),
         (.leftKnee, .leftAnkle),
 
         // The right arm's connections.
+        // 우측 팔 연결
         (.rightShoulder, .rightElbow),
         (.rightElbow, .rightWrist),
 
         // The right leg's connections.
+        // 우측 다리 연결
         (.rightHip, .rightKnee),
         (.rightKnee, .rightAnkle),
 
         // The torso's connections.
+        // 몸통 연결
         (.leftShoulder, .neck),
         (.rightShoulder, .neck),
         (.leftShoulder, .leftHip),

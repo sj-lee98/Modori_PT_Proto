@@ -12,6 +12,7 @@ import Vision
 typealias Observation = VNHumanBodyPoseObservation
 /// Stores the landmarks and connections of a human body pose and draws them as
 /// a wireframe.
+/// 운동 동작 인식에 필요한 랜드마크를 인식하여 실선으로 연결한 부분을 저장하는 struct
 /// - Tag: Pose
 struct Pose {
     /// The names and locations of the significant points on a human body.

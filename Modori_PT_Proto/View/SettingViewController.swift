@@ -2,20 +2,22 @@
 //  MainViewController.swift
 //  Modori_PT_Proto
 //
-//  Created by 이성주 on 2022/01/25.
+//  Created by Modori on 2022/01/25.
 //
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SettingViewController: UIViewController {
-    
+    var ref: DatabaseReference!
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var resetPasswordButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.ref = Database.database().reference()
+        self.hideKeyboardWhenTappedAround()
         // 네이게이션 뒤로가기 버튼 비활성화 (로그인 후 메인 화면에서 뒤로가기 하면 ?? 어색)
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
@@ -49,26 +51,32 @@ class SettingViewController: UIViewController {
         } catch let sighOutError as NSError {
             print("LogOut 중에 Error 발생 : \(sighOutError.localizedDescription)")
         }
-        
-        //self.LoginViewController()
     }
     
-    
     private func LoginViewController() {
-    
+        
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let loginViewController = storyboard.instantiateViewController(identifier: "InitialView")
-
         loginViewController.modalPresentationStyle = .fullScreen
         loginViewController.modalTransitionStyle = .flipHorizontal
-
         navigationController?.show(loginViewController, sender: nil)
-        
     }
     
     // 비밀번호 변경 버튼을 눌렀을때 등록한 이메일로 비밀번호 초기화 메일 보냄
     @IBAction func resetPasswordButtonTapped(_ sender: UIButton) {
         let email = Auth.auth().currentUser?.email ?? ""
         Auth.auth().sendPasswordReset(withEmail: email, completion: nil)
+    }
+}
+
+extension UIViewController {
+    // 키보드 숨기기
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

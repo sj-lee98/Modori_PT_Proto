@@ -2,7 +2,7 @@
 //  CameraViewController.swift
 //  Modori_PT_Proto
 //
-//  Created by 이성주 on 2022/01/27.
+//  Created by Modori on 2022/01/27.
 //
 
 import UIKit
