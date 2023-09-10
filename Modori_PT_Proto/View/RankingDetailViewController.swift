@@ -33,7 +33,7 @@ class RankingDetailViewController: UIViewController {
             }
         })
         
-        // Add lottie
+//        // Add lottie
         let animationView = AnimationView(name: "detailLottie")
         lottieView.contentMode = .scaleAspectFit
         lottieView.addSubview(animationView)

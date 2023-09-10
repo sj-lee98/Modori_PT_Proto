@@ -69,7 +69,7 @@ extension MainViewController {
         super.viewDidLoad()
         ref.child("Workout/Users/\(uid)").getData(completion:  { error, snapshot in
             guard let value = snapshot.value as? [String: Int64] else {
-                print(snapshot)
+//                print(snapshot)
                 return
             }
             value.forEach{
